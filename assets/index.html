@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Capcha Example</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+
+    <body ng-app="heatmapper" ng-controller="mainCtrl">
+
+    <div id="container">
+        <div id="body" ng-cloak>
+            <div class="left" ng-show="goLeft" ng-click="leftOne()"><div class="arrow-left"></div></div>
+            <div class="right" ng-show="goRight" ng-click="rightOne()"><div class="arrow-right"></div></div>
+
+            <div class="content panel panel-default">
+                <div class="panel-body">
+                    <h1>oh hai</h1>
+
+                </div>
+            </div>
+        </div>
+        <div id="footer" style="font-size:3.5em; text-align:right"><span style="font-size:.70em">contact</span>  <a href="https://twitter.com/m0ngr31"><i class="fa fa-twitter-square"></i></a> <a href="http://www.reddit.com/user/m0ngr31"><i class="fa fa-reddit-square"></i></a> <a href="https://github.com/m0ngr31"><i class="fa fa-github-square"></i></a> <a href="https://bitbucket.org/m0ngr31"><i class="fa fa-bitbucket-square"></i></a></div>
+    </div>
+    </body>
+</html>

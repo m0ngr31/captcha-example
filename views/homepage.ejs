@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Captcha Example</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/styles/style.css">
+
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+        <script src="/js/app.js"></script>
+    </head>
+
+    <body ng-app="captcha" ng-controller="mainCtrl">
+
+    <div id="container">
+        <div id="body" ng-cloak>
+            <div class="content panel panel-default">
+                <div class="panel-body">
+                    <h1>{{title}}</h1>
+                    <br>
+
+                    <canvas id="canvas" width="160" height="60"/></canvas>
+                    <input class="form-control" id="captcha" placeholder="Enter Captcha here" ng-model="attempt">
+                    <br>
+                    <button class="btn btn-primary" ng-click="checkCaptcha()">Submit</button>
+                    <button class="btn btn-info" ng-click="getCaptcha()"><i class="fa fa-refresh"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="footer" style="font-size:3.5em; text-align:right"><span style="font-size:.70em">contact</span>  <a href="https://twitter.com/m0ngr31"><i class="fa fa-twitter-square"></i></a> <a href="https://github.com/m0ngr31"><i class="fa fa-github-square"></i></a> <a href="https://bitbucket.org/m0ngr31"><i class="fa fa-bitbucket-square"></i></a></div>
+    </div>
+    </body>
+</html>
